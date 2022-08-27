@@ -10,3 +10,6 @@ def is_prime(number)
   return true if (2..number - 1).all? { |i| number % i != 0 }
   return false
 end
+
+# Printing prime numbers from 1 to 100
+(2..100).each { |i| puts i if is_prime(i) }
